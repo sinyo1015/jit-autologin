@@ -106,9 +106,7 @@ function sendMessage(client, message){
 }
 
 
-app.listen(3000, function(){
-	console.log(appDir);
-	console.log("Express.js server is running");
+
 	myEmitter.on('event', function firstListener(param) {
 	  clientS.sendText(messageS.from, param.data);
 	});
@@ -140,7 +138,6 @@ app.listen(3000, function(){
 	    }
 	  });
 	}
-});
 
 
 
